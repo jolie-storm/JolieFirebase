@@ -1,9 +1,34 @@
+
+
+type ConnectRequest:void{
+  .filename:string
+  .url:string
+}
+type AddListenerRequest:void{
+  .valueEvent:bool
+  .childEvent:bool
+  .serviceAddress:string
+  .collection:string
+}
+
+type UpdateDBRecord:void{
+  .collection:string
+  .firebaseId:string
+  .payload:undefined
+}
+
+type InsertDBRecord:void{
+  .collection:string
+  .firebaseId:string
+  .payload:undefined
+}
+
 interface JolieFireBaseInterface {
 RequestResponse:
- connect(undefined)(undefined),
- addListener(undefined)(undefined),
- updateDBRecord(undefined)(undefined),
- insertDBRecord(undefined)(undefined),
+ connect(ConnectRequest)(void),
+ addListener(AddListenerRequest)(void),
+ updateDBRecord(UpdateDBRecord)(undefined),
+ insertDBRecord(InsertDBRecord)(undefined),
  deleteDBRecord(undefined)(undefined)
 }
 

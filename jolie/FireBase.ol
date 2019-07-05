@@ -26,14 +26,14 @@ outputPort CustomerSodep {
 }
 
 init{
-  request.filename = "joliefirebase-firebase-adminsdk-a0zir-6c5a95ce70.json";
+  request.filename = "joliefirebase-firebase-adminsdk-a0zir-a4d6df5e84.json";
   request.url = "https://joliefirebase.firebaseio.com/";
-  //connect@FireBasePort(request)();
-  requestAddListener.collection="/test";
+  connect@FireBasePort(request)();
+  requestAddListener.collection="/history";
   requestAddListener.serviceAddress = "socket://localhost:4000";
   requestAddListener.valueEvent = false;
-  requestAddListener.childEvent = true
-  //addListener@FireBasePort(requestAddListener)()
+  requestAddListener.childEvent = true;
+  addListener@FireBasePort(requestAddListener)()
 }
 execution{ concurrent }
 main{

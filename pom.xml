@@ -20,7 +20,7 @@
 		<dependency>
 			<groupId>Jolie</groupId>
 			<artifactId>jolie</artifactId>
-			<version>1.7.2</version>
+			<version>1.7.1</version>
 		</dependency>
 		<dependency>
 			<groupId>Jolie</groupId>
@@ -30,7 +30,7 @@
 		<dependency>
 			<groupId>Jolie</groupId>
 			<artifactId>libjolie</artifactId>
-			<version>1.7.2</version>
+			<version>1.7.1</version>
 		</dependency>
 		<dependency>
 			<groupId>Jolie</groupId>
